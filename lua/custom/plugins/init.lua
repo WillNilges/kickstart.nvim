@@ -37,9 +37,6 @@ return {
 
   {
     'EdenEast/nightfox.nvim',
-    config = function()
-      vim.cmd.colorscheme 'dawnfox'
-    end,
   },
   {
     -- Set lualine as statusline
@@ -48,7 +45,6 @@ return {
     opts = {
       options = {
         icons_enabled = false,
-        theme = 'dawnfox',
         component_separators = { left = '', right = '' },
         section_separators = { left = '▙', right = '▟' },
       },

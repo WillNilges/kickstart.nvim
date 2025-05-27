@@ -1017,4 +1017,3 @@ require('lazy').setup({
 --
 
 require 'custom.options'
-require 'custom.theming'
