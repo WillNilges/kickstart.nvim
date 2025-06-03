@@ -5,7 +5,7 @@ local function read_theme()
     print 'Could not open file'
     return
   end
-  local theme = theme_file:read '*all'
+  local theme = theme_file:read '*l'
   theme_file:close()
   return theme
 end
