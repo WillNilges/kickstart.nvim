@@ -1,3 +1,5 @@
+**/*.bu
+*.bu
 tags
 test.sh
 .luarc.json
