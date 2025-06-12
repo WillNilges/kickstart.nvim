@@ -1,5 +1,7 @@
 **/*.bu
 *.bu
+**/*.lua.bu
+*.lua.bu
 tags
 test.sh
 .luarc.json
