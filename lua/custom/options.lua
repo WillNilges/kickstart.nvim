@@ -58,3 +58,10 @@ require('winbar').setup {
 vim.cmd [[set tabstop=4]]
 vim.cmd [[set shiftwidth=4]]
 vim.cmd [[set expandtab]]
+
+vim.api.nvim_create_autocmd({ 'FileType' }, {
+  pattern = { 'proto' },
+  callback = function()
+    vim.b.autoformat = false
+  end,
+})
