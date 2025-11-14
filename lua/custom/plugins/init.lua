@@ -31,13 +31,9 @@ return {
       { "<c-s>", mode = { "c" }, function() require("flash").toggle() end, desc = "Toggle Flash Search" },
     },
   },
-  { 'catppuccin/nvim', name = 'catppuccin', priority = 1000 },
-
-  { 'savq/melange-nvim' },
-
-  {
-    'EdenEast/nightfox.nvim',
-  },
+  --{ 'catppuccin/nvim', name = 'catppuccin', priority = 1000 },
+  --{ 'savq/melange-nvim' },
+  --{'EdenEast/nightfox.nvim',},
   {
     -- Set lualine as statusline
     'nvim-lualine/lualine.nvim',
