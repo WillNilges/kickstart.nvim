@@ -43,6 +43,17 @@ return {
         icons_enabled = false,
         component_separators = { left = '', right = '' },
         section_separators = { left = '▙', right = '▟' },
+        sections = {
+          lualine_b = {
+            {
+              function()
+                return vim.g.remote_neovim_host and ('Remote: %s'):format(vim.uv.os_gethostname()) or ''
+              end,
+              padding = { right = 1, left = 1 },
+              separator = { left = '', right = '' },
+            },
+          },
+        },
       },
     },
   },
@@ -54,7 +65,7 @@ return {
     main = 'ibl',
     opts = {},
   },
-  'tpope/vim-fugitive',
+  { 'tpope/vim-fugitive' },
   --{
   --  'romgrk/barbar.nvim',
   --  dependencies = {
@@ -73,4 +84,14 @@ return {
   --  version = '^1.0.0', -- optional: only update when a new 1.x version is released
   --},
   { 'fgheng/winbar.nvim' },
+  {
+    'amitds1997/remote-nvim.nvim',
+    version = '*', -- Pin to GitHub releases
+    dependencies = {
+      'nvim-lua/plenary.nvim', -- For standard functions
+      'MunifTanjim/nui.nvim', -- To build the plugin UI
+      'nvim-telescope/telescope.nvim', -- For picking b/w different remote methods
+    },
+    config = true,
+  },
 }

@@ -677,6 +677,8 @@ require('lazy').setup({
         pyright = {},
         rust_analyzer = {},
         jdtls = {},
+        -- eslint_lsp = {},
+        ts_ls = {},
         -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
         --
         -- Some languages (like typescript) have entire language plugins that can be useful:
@@ -808,7 +810,11 @@ require('lazy').setup({
           --   end,
           -- },
         },
-        opts = {},
+        opts = {
+          history = true,
+          region_check_events = 'InsertEnter',
+          delete_check_events = 'TextChanged',
+        },
       },
       'folke/lazydev.nvim',
     },
@@ -896,7 +902,8 @@ require('lazy').setup({
       -- Load the colorscheme here.
       -- Like many other themes, this one has different styles, and you could load
       -- any other, such as 'tokyonight-storm', 'tokyonight-moon', or 'tokyonight-day'.
-      vim.cmd.colorscheme 'tokyonight-night'
+      -- vim.cmd.colorscheme 'tokyonight-night'
+      -- vim.cmd.colorscheme 'tokyonight-day'
     end,
   },
 
@@ -1016,4 +1023,10 @@ require('lazy').setup({
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
---
+
+-- Options added by me
+require 'custom.options'
+
+-- Select theme
+-- vim.cmd.colorscheme 'tokyonight-day'
+vim.cmd.colorscheme 'tokyonight-night'
