@@ -84,18 +84,15 @@ return {
   --  version = '^1.0.0', -- optional: only update when a new 1.x version is released
   --},
   { 'fgheng/winbar.nvim' },
-<<<<<<< HEAD
-  {
-    'amitds1997/remote-nvim.nvim',
-    version = '*', -- Pin to GitHub releases
-    dependencies = {
-      'nvim-lua/plenary.nvim', -- For standard functions
-      'MunifTanjim/nui.nvim', -- To build the plugin UI
-      'nvim-telescope/telescope.nvim', -- For picking b/w different remote methods
-    },
-    config = true,
-  },
-=======
+  -- {
+  --   'amitds1997/remote-nvim.nvim',
+  --   version = '*', -- Pin to GitHub releases
+  --   dependencies = {
+  --     'nvim-lua/plenary.nvim', -- For standard functions
+  --     'MunifTanjim/nui.nvim', -- To build the plugin UI
+  --     'nvim-telescope/telescope.nvim', -- For picking b/w different remote methods
+  --   },
+  --   config = true,
+  -- },
   { 'towolf/vim-helm' },
->>>>>>> dfb5c31 (add nixlsp)
 }
