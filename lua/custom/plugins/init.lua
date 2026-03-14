@@ -84,6 +84,7 @@ return {
   --  version = '^1.0.0', -- optional: only update when a new 1.x version is released
   --},
   { 'fgheng/winbar.nvim' },
+<<<<<<< HEAD
   {
     'amitds1997/remote-nvim.nvim',
     version = '*', -- Pin to GitHub releases
@@ -94,4 +95,7 @@ return {
     },
     config = true,
   },
+=======
+  { 'towolf/vim-helm' },
+>>>>>>> dfb5c31 (add nixlsp)
 }

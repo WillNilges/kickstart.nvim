@@ -1030,3 +1030,5 @@ require 'custom.options'
 -- Select theme
 -- vim.cmd.colorscheme 'tokyonight-day'
 vim.cmd.colorscheme 'tokyonight-night'
+require 'custom.theming'
+require 'custom.nixlsp'
